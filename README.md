@@ -8,10 +8,17 @@ logs in a single normalized Oracle database, with business logic enforced at the
 database layer via triggers, procedures, and functions.
 
 Built as a course project for **UCS310 — Database Management Systems**,
-Thapar Institute of Engineering & Technology.
+Thapar Institute of Engineering & Technology. Developed and tested using
+**Oracle APEX (SQL Workshop)**.
 
 **Team:** Ridhi, Tanishq Goyal, Saanjal Jain
 **Instructor:** Dr. Simranjit Kaur
+
+---
+
+## ER Diagram
+
+![ER Diagram](ER_DIAGRAM.png)
 
 ---
 
@@ -20,6 +27,7 @@ Thapar Institute of Engineering & Technology.
 | File | What it is |
 |---|---|
 | `healthcare_inventory_system_final.sql` | Full backend — schema, data, triggers, procedures, functions, views, indexes, and required queries. This is the core deliverable. |
+| `ER_DIAGRAM.png` | Entity-relationship diagram of the full 17-table schema. |
 | `healthcare_inventory_redesigned.html` | A static front-end **UI/UX prototype** to visualize how the system's screens and workflows would look. It uses hardcoded sample data and is **not connected to the Oracle database** — no live queries, no backend calls. Built purely to demonstrate the intended user experience for admins, doctors, and pharmacists. |
 | `dbmsreport_*.pdf` | Course project report/documentation. |
 
@@ -72,7 +80,7 @@ from the course syllabus.
 
 ## How to run
 
-1. Requires Oracle 19c / Oracle LiveSQL / Oracle XE.
+1. Requires Oracle 19c / Oracle LiveSQL / Oracle XE / Oracle APEX SQL Workshop.
 2. Run `healthcare_inventory_system_final.sql` top-to-bottom as a single script —
    it starts with a cleanup section (drops existing objects if present) so it's
    safe to re-run.
@@ -87,6 +95,7 @@ hardcoded sample data.
 
 ## Status
 
-The SQL backend is complete and functional. The HTML file is a visual prototype
-only and is not wired up to the database — connecting the two (e.g., via Oracle
-APEX or a lightweight backend) is a potential next step.
+The SQL backend is complete, functional, and tested in Oracle APEX. The HTML file
+is a visual prototype only and is not wired up to the database — connecting the
+two (e.g., via Oracle APEX pages/forms or a lightweight backend) is a potential
+next step.
